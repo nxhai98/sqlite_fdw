@@ -16,5 +16,6 @@ jobs:
     - name: make check
       run: |
          echo "done"
-         docker run --rm -v $(pwd):/tmp rockylinux:8.8 /bin/sh -c "cp /home/user1/rpmbuild/RPMS/x86_64/*.rpm /tmp/"
+         docker run --rm -v $(pwd):/tmp rockylinux:8.8 /bin/sh \
+         -c "cp /home/user1/rpmbuild/RPMS/x86_64/*.rpm /tmp/"
       
