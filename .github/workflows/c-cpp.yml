@@ -14,4 +14,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: make check
-      run: docker run --rm -v $(pwd):/tmp rockylinux:8.8 /bin/sh -c "cp /home/user1/rpmbuild/RPMS/x86_64/*.rpm /tmp/
+      run: docker run --rm -v $(pwd):/tmp rockylinux:8.8 /bin/sh -c "cp /home/user1/rpmbuild/RPMS/x86_64/*.rpm /tmp/"
